@@ -149,6 +149,8 @@ alias ggpushu='git push upstream $(current_branch)'
 compdef ggpushu=git
 alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
 compdef ggpnp=git
+alias ggsync='git pull upstream $(current_branch) && git push origin $(current_branch)'
+compdef ggsync=git
 
 # Pretty log messages
 function _git_log_prettily(){
