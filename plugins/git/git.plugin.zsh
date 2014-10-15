@@ -151,6 +151,8 @@ alias ggpnp='git pull origin $(current_branch) && git push origin $(current_bran
 compdef ggpnp=git
 alias ggsync='git pull upstream $(current_branch) && git push origin $(current_branch)'
 compdef ggsync=git
+alias ggclean='gcm && git branch | gawk "/^\s/ { print $1 }"'
+compdef ggclean=git
 
 # Pretty log messages
 function _git_log_prettily(){
