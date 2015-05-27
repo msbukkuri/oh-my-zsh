@@ -4,8 +4,8 @@ RPROMPT=$'%{$fg[red]%}[%{$fg_bold[white]%}$(repo_prompt)$(repo_branch)%{$fg[red]
 PS2=$' %{$fg[red]%}->%{$reset_color%} '
 
 function repo_prompt {
-	git branch > /dev/null 2>/dev/null && echo 'git' && return
-	echo 'none'
+    git branch > /dev/null 2>/dev/null && echo 'git' && return
+    echo 'none'
 }
 
 function repo_branch {
